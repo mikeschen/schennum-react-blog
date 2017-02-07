@@ -28,7 +28,11 @@ class App extends React.Component {
 			<div className="schennum-blog">
 				<h1>Blog</h1>
 				<ul className="list-of-blogs">
-					<Blog />
+				<li>test</li>
+				{Object
+					.keys(this.state.blogs)
+					.map(key => <Blog key={key} details={this.state.blogs[key]}/>)
+				}
 				</ul>
 				<AddBlogForm addBlog={this.addBlog}/>
 				<button>Add Sample Blogs</button>
