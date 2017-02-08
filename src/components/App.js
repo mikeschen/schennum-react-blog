@@ -1,6 +1,7 @@
 import React from 'react';
 import AddBlogForm from './AddBlogForm';
 import Blog from './Blog';
+import base from '../base';
 
 class App extends React.Component {
 
@@ -10,7 +11,15 @@ class App extends React.Component {
 		//initial state
 		this.state = {
 			blogs: {}
-		}
+		};
+	}
+
+	componentWillMount() {
+		this.ref = base.syncState(`/blogs`
+			, {
+				context: this,
+				state: 'blogs'
+		});
 	}
 
 	addBlog(blog) {
@@ -26,7 +35,9 @@ class App extends React.Component {
 	render() {
 		return (
 			<div className="schennum-blog">
-				<h1>Blog</h1>
+				<div className="blog-title">
+					<h1>BLOG</h1>
+				</div>
 				<ul className="list-of-blogs">
 				{Object
 					.keys(this.state.blogs)
@@ -38,10 +49,5 @@ class App extends React.Component {
 		)
 	}
 }
-
-					// {Object
-					// 	.keys(this.state.blogs)
-					// 	.map(key => <Blog key={key} details={this.state.blogs[key]}/>)
-					// }
 
 export default App;
