@@ -35,7 +35,7 @@ class App extends React.Component {
 	render() {
 		return (
 			<div className="schennum-blog">
-				<div className="blog-title">
+				<div className="blog-title blog-banner">
 					<h1>BLOG</h1>
 				</div>
 				<ul className="list-of-blogs">

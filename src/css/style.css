@@ -1,6 +1,7 @@
 body {
   margin: 100px;
   padding: 10px;
+
 }
 
 h1 {
@@ -12,10 +13,21 @@ h1 {
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
 }
 
+.blog-banner {
+    width: 100%;
+    background-color: #000;
+    background-image: url(../images/kelsey-johnsen-727.jpg);
+    background-position: center center, center top;
+    background-repeat: repeat, no-repeat;
+}
+
 .blog-title {
-  width: 100%;
-  height: 200px;
-  background-color: black;
+    font-size: 26px;
+    color: #e8ecf0;
+
+  /*width: 100%;*/
+  /*height: 200px;*/
+  /*background-color: black;*/
 }
 
 .blog-edit {
@@ -27,6 +39,7 @@ h1 {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
+
 .blog-edit input,
 .blog-edit textarea,
 .blog-edit select {
@@ -34,28 +47,31 @@ h1 {
   padding: 10px;
   line-height: 1;
   font-size: 1.2rem;
-  border: 0;
-  border: 1px solid #000;
   border-right: 1px solid #000;
   border-radius: 0;
   background: #fff;
 }
+
 .blog-edit input:focus,
 .blog-edit textarea:focus,
 .blog-edit select:focus {
   outline: 0;
   background: #fef2de;
 }
+
 .blog-edit textarea {
   width: 50%;
 }
+
 .blog-edit input:last-of-type {
   width: 50%;
 }
+
 .blog-edit button {
   width: 50%;
   border: 0;
 }
+
 button {
     background-color: #4CAF50;
     border: none;
