@@ -14,6 +14,7 @@ class Blog extends React.Component {
 				</h3>
 				<p>{details.desc}</p>
 				<img src={this.props.details.image} alt={this.props.details.name} style={imageStyle}/>
+				{/*<button className="btn btn-warning" onClick={() => this.props.removeBlog(key)}>Delete Blog</button>*/}
 			</li>
 		)
 	}

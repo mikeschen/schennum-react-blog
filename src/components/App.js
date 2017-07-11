@@ -8,6 +8,7 @@ class App extends React.Component {
 	constructor() {
 		super();
 		this.addBlog = this.addBlog.bind(this);
+		this.removeBlog = this.removeBlog.bind(this);
 		//initial state
 		this.state = {
 			blogs: {}
@@ -32,6 +33,12 @@ class App extends React.Component {
 		this.setState({ blogs });
 	}
 
+	removeBlog(key){
+		const blogs = {...this.state.blogs};
+		blogs[key] = null;
+		this.setState({ blogs });
+	}
+
 	render() {
 		return (
 			<div className="schennum-blog">
@@ -43,8 +50,12 @@ class App extends React.Component {
 					.keys(this.state.blogs)
 					.map(key => <Blog key={key} details={this.state.blogs[key]}/>)
 				}
+
 				</ul>
-				<AddBlogForm addBlog={this.addBlog}/>
+				<AddBlogForm
+					addBlog={this.addBlog}
+				/>
+
 			</div>
 		)
 	}
