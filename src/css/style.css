@@ -27,16 +27,6 @@ h1 {
     background-repeat: repeat, no-repeat;
 }
 
-.blog-title {
-    font-size: 26px;
-    color: #383838;
-    margin-left: 10px;
-}
-
-.blog-details {
-    padding-left:10px;
-    color: #2d2d2d;
-}
 
 .blog-edit input:focus,
 .blog-edit textarea:focus,
@@ -51,8 +41,7 @@ h1 {
 }
 
 .add-blog-border {
-    padding: 20px;
+    padding: 15px;
     width: 440px;
-    margin: 10px;
     border:solid 1px darkgray;
 }
