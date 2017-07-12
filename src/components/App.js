@@ -43,7 +43,8 @@ class App extends React.Component {
 		return (
 			<div className="schennum-blog">
 				<div className="blog-title blog-banner">
-					<h1>BLOG</h1>
+					<h1>REACT BLOG</h1>
+					<span className="subtitle">The Life and Times of Sammy the Dog</span>
 				</div>
 				<ul className="list-of-blogs">
 				{Object
