@@ -41,30 +41,11 @@ h1 {
       flex-wrap: wrap;
 }
 
-.blog-edit input,
-.blog-edit textarea,
-.blog-edit select {
-  width: 10%;
-  padding: 10px;
-  line-height: 1;
-  font-size: 1.2rem;
-  border-radius: 0;
-  background: #fff;
-}
-
 .blog-edit input:focus,
 .blog-edit textarea:focus,
 .blog-edit select:focus {
   outline: 0;
   background: #fef2de;
-}
-
-.blog-edit textarea {
-  width: 50%;
-}
-
-.blog-edit input:last-of-type {
-  width: 50%;
 }
 
 .blog-edit button {
