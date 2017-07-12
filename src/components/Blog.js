@@ -8,14 +8,14 @@ class Blog extends React.Component {
 			width: '400px'
     };
 		return (
-			<li className="list-blog">
+			<div className="list-blog">
 				<h3 className="blog-title">
 					{details.title}
 				</h3>
 				<p>{details.desc}</p>
 				<img src={this.props.details.image} alt={this.props.details.name} style={imageStyle}/>
 				{/*<button className="btn btn-warning" onClick={() => this.props.removeBlog(key)}>Delete Blog</button>*/}
-			</li>
+			</div>
 		)
 	}
 }
