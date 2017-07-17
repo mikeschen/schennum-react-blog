@@ -8,6 +8,7 @@ class App extends React.Component {
 	constructor() {
 		super();
 		this.addBlog = this.addBlog.bind(this);
+		this.updateBlog = this.updateBlog.bind(this);
 		this.removeBlog = this.removeBlog.bind(this);
 		//initial state
 		this.state = {
@@ -33,6 +34,13 @@ class App extends React.Component {
 		this.setState({ blogs });
 	}
 
+	updateBlog(key, updatedBlog) {
+		const blogs = {...this.state.blogs};
+		console.log("blogs = ",  updatedBlog)
+		blogs[key] = updatedBlog;
+		this.setState({ blogs });
+	}
+
 	removeBlog(key){
 		const blogs = {...this.state.blogs};
 		blogs[key] = null;
@@ -51,12 +59,12 @@ class App extends React.Component {
 					.keys(this.state.blogs)
 					.map(key => <Blog key={key} details={this.state.blogs[key]}/>)
 				}
-
 				</ul>
 				<AddBlogForm
 					addBlog={this.addBlog}
+					blogs={this.state.blogs}
+					updateBlog={this.updateBlog}
 				/>
-
 			</div>
 		)
 	}
