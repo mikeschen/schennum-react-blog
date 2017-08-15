@@ -9,6 +9,8 @@ class Blog extends React.Component {
 			width: '400px'
     };
 		return (
+			<div className="row">
+			<div className="col s6">
 			<Card className='small'
 				header={<CardTitle image={this.props.details.image}>
 					{details.title}
@@ -16,6 +18,8 @@ class Blog extends React.Component {
 				{details.desc}
 				{/*<Button waves='light' className='red' onClick={() => this.props.removeBlog(key)}>Delete Blog</Button>*/}
 			</Card>
+			</div>
+			</div>
 		)
 	}
 }

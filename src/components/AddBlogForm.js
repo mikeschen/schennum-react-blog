@@ -24,9 +24,11 @@ class AddBlogForm extends React.Component {
 		return(
 			<div className="blog-edit" key={key}>
 				<input type="text" name="title" value={blog.title} placeholder="Blog Title"
-							 onChange={(e) => this.handleChange(e, key)}/>
-				<input type="text" name="desc" value={blog.desc} placeholder="Blog Description"/>
-				<input type="text" name="image" value={blog.image} placeholder="Blog Image"/>
+							 onChange={(e) => this.handleChange(e, key)} />
+				<input type="text" name="desc" value={blog.desc} placeholder="Blog Description"
+							 onChange={(e) => this.handleChange(e, key)} />
+				<input type="text" name="image" value={blog.image} placeholder="Blog Image"
+							 onChange={(e) => this.handleChange(e, key)} />
 			</div>
 		)
 	}

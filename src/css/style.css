@@ -1,6 +1,7 @@
 body {
   margin: 20px;
   padding: 10px;
+  background-color: #f5f2f0;
 }
 
 h1 {
@@ -12,6 +13,18 @@ h1 {
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
 }
 
+nav {
+  margin-bottom: 10px;
+}
+
+.add-blog-border {
+  background-color: #ffffff;
+}
+
+.card {
+    width: 440px;
+}
+
 .subtitle {
     color: #ffffff;
     font-size: 20px;
@@ -21,6 +34,7 @@ h1 {
 .blog-banner {
     height: 200px;
     width: 100%;
+    margin-bottom: 40px;
     background-color: #000;
     background-image: url(../images/kelsey-johnsen-727.jpg);
     background-position: center center, center top;
