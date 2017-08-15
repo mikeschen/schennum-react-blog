@@ -11,11 +11,11 @@ class Blog extends React.Component {
 		return (
 			<div className="row">
 			<div className="col s6">
-			<Card className='small'
+			<Card className='medium'
 				header={<CardTitle image={this.props.details.image}>
 					{details.title}
 					</CardTitle>}>
-				{details.desc}
+				{details.dateBlog} - {details.desc} 
 			</Card>
 			</div>
 			</div>

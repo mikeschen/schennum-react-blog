@@ -1,5 +1,6 @@
 import React from 'react';
-import { Button, Row, Card } from 'react-materialize';
+import { Button, Card } from 'react-materialize';
+import { getTime } from '../helpers';
 
 class AddBlogForm extends React.Component {
 	constructor() {
@@ -30,7 +31,7 @@ class AddBlogForm extends React.Component {
 							 onChange={(e) => this.handleChange(e, key)} />
 				<input type="text" name="image" value={blog.image} placeholder="Blog Image"
 							 onChange={(e) => this.handleChange(e, key)} />
-				{<Button waves='light' className='red' onClick={() => this.props.removeBlog(key)}>Delete Blog</Button>}
+				{<Button className='waves-effect waves-light red' onClick={() => this.props.removeBlog(key)}>Delete Blog</Button>}
 			</Card>
 		)
 	}
@@ -41,6 +42,7 @@ class AddBlogForm extends React.Component {
 			title: this.title.value,
 			desc: this.desc.value,
 			image: this.image.value,
+			dateBlog: getTime()
 		}
 		console.log("the blog", blog)
 		this.props.addBlog(blog);
@@ -51,15 +53,15 @@ class AddBlogForm extends React.Component {
 		return (
 
 			<div>
-						<form ref={(input) => this.blogForm = input} className="blog-edit" onSubmit={(e) => this.createBlog(e)}>
-			<Card>
-				<input ref={(input) => this.title = input} type="text" placeholder="Blog Title" required/>
-				<input ref={(input) => this.desc = input} type="text" placeholder="Blog Description" required/>
-				<input ref={(input) => this.image = input} type="text" placeholder="Blog Image" required/>
-				<Button waves='light' type="submit">Add Blog</Button>
-			</Card>
-			</form>
-        {Object.keys(this.props.blogs).map(this.renderBlogs)}
+				<form ref={(input) => this.blogForm = input} className="blog-edit" onSubmit={(e) => this.createBlog(e)}>
+				<Card>
+					<input ref={(input) => this.title = input} type="text" placeholder="Blog Title" required/>
+					<input ref={(input) => this.desc = input} type="text" placeholder="Blog Description" required/>
+					<input ref={(input) => this.image = input} type="text" placeholder="Blog Image" required/>
+					<Button className='waves-effect waves-light' type="submit">Add Blog</Button>
+				</Card>
+				</form>
+	        {Object.keys(this.props.blogs).map(this.renderBlogs)}
 			</div>
 		)
 	}
