@@ -76,6 +76,7 @@ class App extends React.Component {
 						addBlog={this.addBlog}
 						blogs={this.state.blogs}
 						updateBlog={this.updateBlog}
+						removeBlog={this.removeBlog}
 					/>
 					</div>
 			</div>

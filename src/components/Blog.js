@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Card, CardTitle } from 'react-materialize';
+import { Card, CardTitle } from 'react-materialize';
 
 class Blog extends React.Component {
 	render() {
@@ -16,7 +16,6 @@ class Blog extends React.Component {
 					{details.title}
 					</CardTitle>}>
 				{details.desc}
-				{/*<Button waves='light' className='red' onClick={() => this.props.removeBlog(key)}>Delete Blog</Button>*/}
 			</Card>
 			</div>
 			</div>

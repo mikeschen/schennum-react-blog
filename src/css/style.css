@@ -17,8 +17,16 @@ nav {
   margin-bottom: 10px;
 }
 
+.card-content {
+  margin-top: 21px;
+}
+
 .add-blog-border {
   background-color: #ffffff;
+}
+
+.brand-logo {
+  margin-left: 25px;
 }
 
 .card {
