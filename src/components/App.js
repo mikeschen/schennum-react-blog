@@ -67,6 +67,7 @@ class App extends React.Component {
 					<ul className="list-of-blogs">
 					{Object
 						.keys(this.state.blogs)
+						.reverse()
 						.map(key => <Blog key={key} details={this.state.blogs[key]}/>)
 					}
 					</ul>
