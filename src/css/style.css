@@ -66,3 +66,7 @@ nav {
     width: 440px;
     border:solid 1px darkgray;
 }
+
+.pad-top {
+    padding-top: 40px;
+}
