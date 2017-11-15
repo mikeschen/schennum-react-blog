@@ -17,6 +17,9 @@ class Blog extends React.Component {
 					</CardTitle>}>
 				{details.dateBlog} - {details.desc} 
 			</Card>
+				<div className="control-buttons">
+					<button className="likes">&hearts;</button>
+				</div>
 			</div>
 			</div>
 		)
