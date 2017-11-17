@@ -7,9 +7,9 @@ import App from './components/App';
 const Root = () => {
 	return (
 		<BrowserRouter>
-		<div>
-			<Match exactly pattern="/" component={App} />
-		</div>
+			<div>
+				<Match exactly pattern="/" component={App} />
+			</div>
 		</BrowserRouter>
 	)
 }

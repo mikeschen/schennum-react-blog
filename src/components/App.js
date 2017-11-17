@@ -1,6 +1,7 @@
 import React from 'react';
 import AddBlogForm from './AddBlogForm';
 import Blog from './Blog';
+import Header from './Header'
 import base from '../base';
 
 class App extends React.Component {
@@ -50,22 +51,7 @@ class App extends React.Component {
 	render() {
 		return (
 			<div className="schennum-blog">
-
-  <nav>
-    <div className="nav-wrapper">
-      <a href="#" className="brand-logo">Sammys Blog</a>
-      <ul id="nav-mobile" className="right hide-on-med-and-down">
-
-        <li><a href="sass.html">Treats</a></li>
-        <li><a href="badges.html">Snacks</a></li>
-        <li><a href="collapsible.html">Toys</a></li>
-      </ul>
-    </div>
-		<div className="collection">
-			<a href="#!" className="collection-item"><span className="new badge">4</span>Posts</a>
-		</div>
-  </nav>
-
+				<Header />
 				<div className="row pad-top">
 				<div className="col s6">
 					<ul className="list-of-blogs">

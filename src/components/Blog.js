@@ -5,7 +5,7 @@ class Blog extends React.Component {
 
     constructor(props){
         super(props);
-        this.state={ count: 1}
+        this.state={ count: 0}
     }
 
     onclick(type){
