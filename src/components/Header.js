@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 
 class Header extends React.Component {
     render() {
@@ -7,15 +7,13 @@ class Header extends React.Component {
 
             <nav>
                 <div className="nav-wrapper">
-                    <a href="#" className="brand-logo">Sammys Blog</a>
+                    <a href="#" className="brand-logo">Sammy's Blog</a>
                     <ul id="nav-mobile" className="right hide-on-med-and-down">
-                        <li><Link to='/pages/treats'>Treats</Link></li>
-                        <li><Link to='/pages/snacks'>Snacks</Link></li>
-                        <li><Link to='/pages/toys'>Toys</Link></li>
+                        <li><Link to='/'>Home</Link></li>
+                        <li><Link to='/treats'>Treats</Link></li>
+                        <li><Link to='/snacks'>Snacks</Link></li>
+                        <li><Link to='/toys'>Toys</Link></li>
                     </ul>
-                </div>
-                <div className="collection">
-                    <a href="#!" className="collection-item"><span className="new badge">4</span>Posts</a>
                 </div>
             </nav>
         )

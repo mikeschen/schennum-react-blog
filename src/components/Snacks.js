@@ -1,13 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router';
 
 class Snacks extends React.Component {
     render() {
         return (
-
-            <figure>
+            <div>
                 Snacks!!
-            </figure>
+            </div>
         )
     }
 }

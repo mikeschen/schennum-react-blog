@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { BrowserRouter, Match, Miss } from 'react-router';
+import { BrowserRouter } from 'react-router-dom';
 import './css/style.css';
 import App from './components/App';
 
@@ -8,7 +8,7 @@ const Root = () => {
 	return (
 		<BrowserRouter>
 			<div>
-				<Match exactly pattern="/" component={App} />
+				<App />
 			</div>
 		</BrowserRouter>
 	)
