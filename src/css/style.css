@@ -17,6 +17,12 @@ nav {
   margin-bottom: 10px;
 }
 
+.backgroundHeader {
+    padding: 20px !important;
+    color: #ffffff;
+    background-color: #00a69a;
+}
+
 .card-content {
   margin-top: 21px;
 }
@@ -70,3 +76,4 @@ nav {
 .pad-top {
     padding-top: 40px;
 }
+
