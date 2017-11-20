@@ -13,7 +13,7 @@ class App extends React.Component {
 					<div className="footer-copyright">
 						<div className="container">
 							© 2017 Michael Schennum
-							<a className="grey-text text-lighten-4 right" href="#!"><i className="material-icons">email</i></a>
+							<a className="grey-text text-lighten-4 right" href="mailto:mikemikaels@yahoo.com"><i className="material-icons">email</i></a>
 						</div>
 					</div>
         		</footer>
