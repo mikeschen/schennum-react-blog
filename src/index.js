@@ -6,7 +6,7 @@ import App from './components/App';
 
 const Root = () => {
 	return (
-		<BrowserRouter>
+		<BrowserRouter basename = "/reactblog">
 			<div>
 				<App />
 			</div>

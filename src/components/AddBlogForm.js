@@ -22,7 +22,8 @@ class AddBlogForm extends React.Component {
 	}
 
 	renderBlogs(key) {
-		const blog = this.props.blogs[key];
+        console.log("key!!!Here", key);
+        const blog = this.props.blogs[key];
 		return(
 			<Card className="blog-edit" key={key}>
 				<input type="text" name="title" value={blog.title} placeholder="Blog Title"

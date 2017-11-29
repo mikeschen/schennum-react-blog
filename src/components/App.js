@@ -1,6 +1,7 @@
 import React from 'react';
 import Main from './Main';
-import Header from './Header'
+import Header from './Header';
+import Weather from './Weather';
 
 class App extends React.Component {
 
@@ -8,6 +9,7 @@ class App extends React.Component {
 		return (
 			<div className="schennum-blog">
 				<Header />
+				<Weather />
 				<Main />
 				<footer className="page-footer">
 					<div className="footer-copyright">
