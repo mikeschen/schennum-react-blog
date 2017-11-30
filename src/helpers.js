@@ -8,3 +8,8 @@ export function getTime() {
     
       return dateAll;
  }
+
+ export function getTemp(temp) {
+     var fahrenheit = parseInt(temp * 9/5 - 459.67);
+     return fahrenheit;
+ }
