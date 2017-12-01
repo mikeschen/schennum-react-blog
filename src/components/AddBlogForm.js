@@ -16,8 +16,8 @@ class AddBlogForm extends React.Component {
 		const updatedBlog = {
 			...blog,
 			[e.target.name]: e.target.value
-		}
-		console.log("key = ",  key)
+		};
+		console.log("key = ",  key);
 		this.props.updateBlog(key, updatedBlog);
 	}
 

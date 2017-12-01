@@ -14,7 +14,7 @@ class Weather extends React.Component {
     }
 
     callApi(){
-        fetch('http://api.openweathermap.org/data/2.5/weather?zip=94040,us&appid=ddf4617215c851dc1872708540707032')
+        fetch('http://api.openweathermap.org/data/2.5/weather?zip=85020,us&appid=ddf4617215c851dc1872708540707032')
             .then((result) => {
                 return result.json();
             }).then((data) => {
@@ -26,8 +26,8 @@ class Weather extends React.Component {
 
     render() {
         return (
-            <div>
-                <h3>Today's Weather: { this.state.weathers } Degrees</h3>
+            <div className="chip chip-style">
+                Today's Dog Walking Weather in Phoenix: { this.state.weathers }&deg;F
             </div>
         )
     }
