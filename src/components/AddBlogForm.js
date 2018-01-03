@@ -36,6 +36,7 @@ class AddBlogForm extends React.Component {
 			</Card>
 		)
 	}
+	
 	createBlog(event) {
 		event.preventDefault();
 		console.log("Blog Created!");
