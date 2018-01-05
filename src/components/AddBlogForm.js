@@ -22,7 +22,7 @@ class AddBlogForm extends React.Component {
 	}
 
 	renderBlogs(key) {
-        console.log("key!!!Here", key);
+        console.log("isActive!!!Here", this.props.showBlogs);
         const blog = this.props.blogs[key];
 		return(
 			<Card className="blog-edit" key={key}>
@@ -63,10 +63,20 @@ class AddBlogForm extends React.Component {
 					<Button className='waves-effect waves-light' type="submit">Add Blog</Button>
 				</Card>
 				</form>
-	        {Object.keys(this.props.blogs).map(this.renderBlogs)}
+			   {this.props.showBlogs && <Edit 
+			   	blogs={this.props.blogs}
+			   	renderBlogs={this.renderBlogs}
+			  />}
+	
 			</div>
 		)
 	}
 }
+
+const Edit = ({blogs, renderBlogs}) => (
+	<div>
+		{Object.keys(blogs).map(renderBlogs)}
+	  </div>
+	)
 
 export default AddBlogForm;

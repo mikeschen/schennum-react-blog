@@ -12,7 +12,8 @@ class Home extends React.Component {
         this.removeBlog = this.removeBlog.bind(this);
         //initial state
         this.state = {
-            blogs: {}
+            blogs: {},
+            isActive: false
         };
     }
 
@@ -47,13 +48,18 @@ class Home extends React.Component {
         this.setState({ blogs });
     }
 
+    handleClick() {
+        this.setState({ isActive: !this.state.isActive });
+        console.log("here", this.state.isActive);
+    }
+
     render() {
         return (
-
                 <div className="row">
                     <div className="collection">
-                        <a href="#!" className="collection-item"><span className="new badge">4</span>Posts</a>
+                        <div onClick={this.handleClick.bind(this)} className="collection-item"><span className="new badge">4</span>Edit Posts</div>
                     </div>
+                   
                     <div className="col s6">
                         <ul className="list-of-blogs">
                             {Object
@@ -69,6 +75,7 @@ class Home extends React.Component {
                             blogs={this.state.blogs}
                             updateBlog={this.updateBlog}
                             removeBlog={this.removeBlog}
+                            showBlogs={this.state.isActive}
                         />
                     </div>
                     <ul className="pagination">
