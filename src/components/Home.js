@@ -50,16 +50,12 @@ class Home extends React.Component {
 
     handleClick() {
         this.setState({ isActive: !this.state.isActive });
-        console.log("here", this.state.isActive);
     }
 
     render() {
         return (
                 <div className="row">
-                    <div className="collection">
-                        <div onClick={this.handleClick.bind(this)} className="collection-item"><span className="new badge">4</span>Edit Posts</div>
-                    </div>
-                   
+                        <a onClick={this.handleClick.bind(this)} className="waves-effect waves-light btn"><i className="material-icons left">edit</i><span className="new badge">4</span>Edit Posts</a>
                     <div className="col s6">
                         <ul className="list-of-blogs">
                             {Object
@@ -69,6 +65,7 @@ class Home extends React.Component {
                             }
                         </ul>
                     </div>
+
                     <div className="col s6">
                         <AddBlogForm
                             addBlog={this.addBlog}
@@ -78,7 +75,7 @@ class Home extends React.Component {
                             showBlogs={this.state.isActive}
                         />
                     </div>
-                    <ul className="pagination">
+                    {/* <ul className="pagination">
                         <li className="disabled"><a href="#!"><i className="material-icons">chevron_left</i></a></li>
                         <li className="active"><a href="#!">1</a></li>
                         <li className="waves-effect"><a href="#!">2</a></li>
@@ -86,7 +83,7 @@ class Home extends React.Component {
                         <li className="waves-effect"><a href="#!">4</a></li>
                         <li className="waves-effect"><a href="#!">5</a></li>
                         <li className="waves-effect"><a href="#!"><i className="material-icons">chevron_right</i></a></li>
-                    </ul>
+                    </ul> */}
                 </div>
             )
         }
