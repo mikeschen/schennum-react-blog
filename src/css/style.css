@@ -80,3 +80,8 @@ nav {
 .chip-style {
     color: #00a69a;
 }
+
+.margin-button {
+  margin-left: 10px;
+  margin-top: 20px;
+}

@@ -15,6 +15,8 @@ class Home extends React.Component {
             blogs: {},
             isActive: false
         };
+        console.log("heremike", this.state.blogs);
+        
     }
 
     componentWillMount() {
@@ -55,7 +57,8 @@ class Home extends React.Component {
     render() {
         return (
                 <div className="row">
-                        <a onClick={this.handleClick.bind(this)} className="waves-effect waves-light btn"><i className="material-icons left">edit</i><span className="new badge">4</span>Edit Posts</a>
+                        <a onClick={this.handleClick.bind(this)} className="waves-effect waves-light btn margin-button">
+                        <i className="material-icons left">edit</i><span className="new badge">4</span>Edit Posts</a>
                     <div className="col s6">
                         <ul className="list-of-blogs">
                             {Object

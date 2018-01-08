@@ -22,7 +22,6 @@ class AddBlogForm extends React.Component {
 	}
 
 	renderBlogs(key) {
-        console.log("isActive!!!Here", this.props.showBlogs);
         const blog = this.props.blogs[key];
 		return(
 			<Card className="blog-edit" key={key}>
