@@ -14,9 +14,7 @@ class Home extends React.Component {
         this.state = {
             blogs: {},
             isActive: false
-        };
-        console.log("heremike", this.state.blogs);
-        
+        };        
     }
 
     componentWillMount() {

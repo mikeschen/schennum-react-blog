@@ -15,7 +15,7 @@ class Blog extends React.Component {
     }
 
 	render() {
-
+		
 	const  { details } = this.props;
 
 	return (

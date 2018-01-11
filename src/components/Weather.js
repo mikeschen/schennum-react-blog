@@ -26,7 +26,7 @@ class Weather extends React.Component {
 
     render() {
         return (
-            <div className="chip chip-style">
+            <div className="chip chip-style min-margin-left">
                 Today's Dog Walking Weather in Phoenix: { this.state.weathers }&deg;F
             </div>
         )

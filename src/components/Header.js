@@ -5,8 +5,8 @@ class Header extends React.Component {
     render() {
         return (
 
-            <nav>
-                <div className="nav-wrapper">
+            <nav className="header-footer-margins">
+                <div className="nav-wrapper top-header">
                     <a href="/" className="brand-logo">Sammy's Blog</a>
                     <ul id="nav-mobile" className="right hide-on-med-and-down">
                         <li><Link to='/'>Home</Link></li>

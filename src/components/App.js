@@ -11,7 +11,7 @@ class App extends React.Component {
 				<Header />
 				<Weather />
 				<Main />
-				<footer className="page-footer">
+				<footer className="page-footer header-footer-margins">
 					<div className="footer-copyright">
 						<div className="container">
 							© 2017 Michael Schennum
