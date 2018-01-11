@@ -3,6 +3,11 @@ React blog for my personal website. Technologies used includes React Materialize
 
 <img src="http://www.mikeschen.com/resources/images/apps/casestudies/reactblog-lg.jpg"  width="400">
 
+Getting Started
+---------------
+
+The easiest way to get started is to clone the repository:
+
 * `git clone <repository-url>` this repository
 * change into the new directory
 * `npm start`
